@@ -41,28 +41,28 @@ const features = [
 
 const Features: React.FC = () => {
   return (
-    <div id="services" className="py-32 bg-[#0a0a0a]">
+    <div id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-24">
-          <h2 className="text-xs text-slate-400 font-black tracking-[0.4em] uppercase mb-4">Core Mentality</h2>
-          <p className="text-5xl font-black text-white sm:text-7xl tracking-tighter">
+        <div className="text-center mb-12">
+          <h2 className="text-xs text-blue-600 font-bold tracking-[0.4em] uppercase mb-4">Core Mentality</h2>
+          <p className="text-4xl font-black text-slate-900 sm:text-5xl tracking-tighter">
             Systemic Elevation.
           </p>
-          <p className="mt-8 max-w-2xl text-xl text-slate-500 mx-auto font-medium">
+          <p className="mt-5 max-w-2xl text-lg text-slate-600 mx-auto font-medium">
             Standard engagement is a temporary fix. Our infrastructure engineering provides a permanent upgrade to your digital presence.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {features.map((feature) => (
-            <div key={feature.name} className="group p-10 bg-[#0a0a0a] rounded-[2.5rem] border border-white/5 hover:border-slate-400/30 transition-all duration-500 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div key={feature.name} className="group p-7 bg-slate-50 rounded-[2rem] border border-slate-200 hover:border-blue-300 transition-all duration-300 relative overflow-hidden hover:shadow-lg">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100/50 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative z-10">
-                <div className="h-16 w-16 rounded-2xl bg-slate-700/20 text-slate-300 flex items-center justify-center mb-8 border border-slate-600/30 group-hover:bg-slate-600 group-hover:text-white transition-all duration-500">
+                <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white flex items-center justify-center mb-6 shadow-md shadow-blue-500/20 group-hover:scale-110 transition-all duration-300">
                   {feature.icon}
                 </div>
-                <h3 className="text-2xl font-black text-white mb-4 uppercase tracking-tight">{feature.name}</h3>
-                <p className="text-slate-400 leading-relaxed font-medium">{feature.description}</p>
+                <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-tight">{feature.name}</h3>
+                <p className="text-slate-600 leading-relaxed font-medium">{feature.description}</p>
               </div>
             </div>
           ))}
